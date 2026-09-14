@@ -1,24 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Kinetix Labs</title>
-    <meta name="description" content="Kinetix Labs — built on Replit. Update this description to reflect the app." />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Kinetix Labs" />
-    <meta property="og:description" content="Kinetix Labs — built on Replit. Update this description to reflect the app." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kinetix Labs" />
-    <meta name="twitter:description" content="Kinetix Labs — built on Replit. Update this description to reflect the app." />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kinetix Labs — Fallback</title>
+  <meta name="description" content="Kinetix Labs — static fallback page">
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;display:flex;align-items:center;justify-content:center;height:100vh;background:#0f172a;color:#e6eef8}
+    .card{max-width:800px;padding:28px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    h1{margin:0 0 8px 0;font-size:28px}
+    p{margin:0 0 12px 0;color:#cbd5e1}
+    a{color:#7dd3fc}
+    .note{font-size:13px;color:#94a3b8;margin-top:12px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Kinetix Labs</h1>
+    <p>Static fallback — the full app requires a frontend build. This page is served while the repo is updated with a production build.</p>
+    <p>To view the full site locally, build the app in artifacts/kinetix-labs and copy the dist/ contents to repo root.</p>
+    <p class="note">Helpful commands (local):<br><code>cd artifacts/kinetix-labs && npm install && npm run build<br>rsync -av artifacts/kinetix-labs/dist/ .</code></p>
+    <p class="note">Repo: <a href="https://github.com/j-mwendwa/KINETIX-LABS">j-mwendwa/KINETIX-LABS</a></p>
+  </div>
+</body>
 </html>
